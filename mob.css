@@ -110,8 +110,23 @@ ul{
 }
 
 @media screen and (min-width: 768px) {
-    .menu {
-        height: 120px;
-        background-color: fuchsia;
+    .nav {
+        max-height: none;
+        top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
     }
+    .menu li {
+        float: left;
+    }
+    .menu a:hover {
+        background-color: transparent;
+        color: var(--cor-hover);
+    }
+    .hamb {
+        display: none;
+    }
+
 }
